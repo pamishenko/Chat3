@@ -10,24 +10,21 @@
 
    <BorderPane prefHeight="12.0" prefWidth="564.0">
             <left>
-               <MenuBar prefHeight="24.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+               <MenuBar prefHeight="25.0" prefWidth="564.0" BorderPane.alignment="CENTER">
                  <menus>
-                   <Menu mnemonicParsing="false" text="Чат">
+                   <Menu mnemonicParsing="false" text="File">
                      <items>
-                       <MenuItem mnemonicParsing="false" text="Сменить комнату" />
-                           <MenuItem mnemonicParsing="false" text="Очистить переписку" />
-                           <MenuItem mnemonicParsing="false" text="Скачать историю" />
-                           <MenuItem mnemonicParsing="false" text="Выйти" />
+                       <MenuItem mnemonicParsing="false" text="Close" />
                      </items>
                    </Menu>
-                     <Menu mnemonicParsing="false" text="Пользователь">
-                        <items>
-                           <MenuItem mnemonicParsing="false" text="Сменить имя" />
-                        </items>
-                     </Menu>
-                   <Menu mnemonicParsing="false" text="Помощь">
+                   <Menu mnemonicParsing="false" text="Edit">
                      <items>
-                       <MenuItem mnemonicParsing="false" text="О программе" />
+                       <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                   </Menu>
+                   <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                       <MenuItem mnemonicParsing="false" text="About" />
                      </items>
                    </Menu>
                  </menus>
@@ -37,7 +34,7 @@
                <Pane prefHeight="24.0" prefWidth="564.0" BorderPane.alignment="CENTER">
                   <children>
                      <Label layoutX="13.0" layoutY="4.0" prefHeight="17.0" prefWidth="179.0" text="Название комнаты" />
-                     <Label layoutX="420.0" layoutY="4.0" prefHeight="17.0" prefWidth="93.0" text="Участники чата:" />
+                     <Label layoutX="426.0" layoutY="4.0" text="Участники чата:" />
                   </children></Pane>
             </bottom></BorderPane>
    <VBox prefHeight="200.0" prefWidth="100.0">
@@ -46,8 +43,12 @@
            <items>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="437.0">
                         <children>
+                           <ScrollPane layoutX="422.0" prefHeight="198.0" prefWidth="141.0">
+                             <content>
+                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="125.0" />
+                             </content>
+                           </ScrollPane>
                            <TextArea layoutY="-1.0" prefHeight="200.0" prefWidth="419.0" />
-                           <TextArea layoutX="419.0" prefHeight="198.0" prefWidth="143.0" />
                         </children></AnchorPane>
            </items>
                   <opaqueInsets>
@@ -57,7 +58,7 @@
       </children>
    </VBox>
 </VBox>
-      <TextField layoutX="7.0" layoutY="254.0" prefHeight="25.0" prefWidth="386.0" />
+      <TextField layoutX="9.0" layoutY="254.0" prefHeight="25.0" prefWidth="384.0" />
       <Button layoutX="399.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Отправить" />
     </children>
 </AnchorPane>
