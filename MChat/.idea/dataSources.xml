@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="users" uuid="a7bfc229-ed98-42cb-96bd-2b496c31aeed">
+    <data-source source="LOCAL" name="MyDB" uuid="9504295d-ce62-4b05-bf33-f9bc7edfc65b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Java\Chat3\MChat\src\main\resources\usersBase</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Java\Chat3\MChat\src\main\resources\MyDB</jdbc-url>
     </data-source>
   </component>
 </project>

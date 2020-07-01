@@ -1,4 +1,4 @@
-package ru.pamishenko;
+package ru.pamishenko.system;
 
 public class SystemInfo {
 

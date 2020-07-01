@@ -1,64 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="286.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pamishenko.Controller">
-    <children>
-<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="upperPan" prefHeight="286.0" prefWidth="564.0" stylesheets="scene.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.pamishenko.Controller">
+        <children>
+        <VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
 
-   <BorderPane prefHeight="12.0" prefWidth="564.0">
-            <left>
-               <MenuBar prefHeight="25.0" prefWidth="564.0" BorderPane.alignment="CENTER">
-                 <menus>
-                   <Menu mnemonicParsing="false" text="File">
-                     <items>
-                       <MenuItem mnemonicParsing="false" text="Close" />
-                     </items>
-                   </Menu>
-                   <Menu mnemonicParsing="false" text="Edit">
-                     <items>
-                       <MenuItem mnemonicParsing="false" text="Delete" />
-                     </items>
-                   </Menu>
-                   <Menu mnemonicParsing="false" text="Help">
-                     <items>
-                       <MenuItem mnemonicParsing="false" text="About" />
-                     </items>
-                   </Menu>
-                 </menus>
-               </MenuBar>
-            </left>
-            <bottom>
-               <Pane prefHeight="24.0" prefWidth="564.0" BorderPane.alignment="CENTER">
-                  <children>
-                     <Label layoutX="13.0" layoutY="4.0" prefHeight="17.0" prefWidth="179.0" text="Название комнаты" />
-                     <Label layoutX="426.0" layoutY="4.0" text="Участники чата:" />
-                  </children></Pane>
-            </bottom></BorderPane>
-   <VBox prefHeight="200.0" prefWidth="100.0">
-      <children>
-         <SplitPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="547.0">
-           <items>
-             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="437.0">
-                        <children>
-                           <ScrollPane layoutX="422.0" prefHeight="198.0" prefWidth="141.0">
-                             <content>
-                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="125.0" />
-                             </content>
-                           </ScrollPane>
-                           <TextArea layoutY="-1.0" prefHeight="200.0" prefWidth="419.0" />
-                        </children></AnchorPane>
-           </items>
-                  <opaqueInsets>
-                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                  </opaqueInsets>
-         </SplitPane>
-      </children>
-   </VBox>
-</VBox>
-      <TextField layoutX="9.0" layoutY="254.0" prefHeight="25.0" prefWidth="384.0" />
-      <Button layoutX="399.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Отправить" />
-    </children>
+       <BorderPane prefHeight="12.0" prefWidth="564.0">
+                <left>
+                   <MenuBar prefHeight="24.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+                     <menus>
+                       <Menu mnemonicParsing="false" text="Чат">
+                         <items>
+                           <MenuItem mnemonicParsing="false" text="Сменить комнату" />
+                               <MenuItem mnemonicParsing="false" text="Очистить переписку" />
+                               <MenuItem mnemonicParsing="false" text="Скачать историю" />
+                               <MenuItem fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonClicked" text="Выйти" />
+                         </items>
+                       </Menu>
+                         <Menu mnemonicParsing="false" text="Пользователь">
+                            <items>
+                               <MenuItem mnemonicParsing="false" text="Сменить имя" />
+                            </items>
+                         </Menu>
+                       <Menu mnemonicParsing="false" text="Помощь">
+                         <items>
+                           <MenuItem mnemonicParsing="false" text="О программе" />
+                         </items>
+                       </Menu>
+                     </menus>
+                   </MenuBar>
+                </left>
+                <bottom>
+                   <Pane prefHeight="262.0" prefWidth="564.0" BorderPane.alignment="CENTER">
+                      <children>
+                         <Label layoutX="13.0" layoutY="4.0" prefHeight="17.0" prefWidth="179.0" text="Название комнаты" />
+                         <Label layoutX="401.0" layoutY="4.0" prefHeight="17.0" prefWidth="93.0" text="Участники чата:" />
+                     <ListView fx:id="usersList" layoutX="401.0" layoutY="21.0" prefHeight="200.0" prefWidth="149.0" />
+                     <TextArea fx:id="chatText" layoutX="6.0" layoutY="21.0" prefHeight="200.0" prefWidth="386.0"  />
+                           <TextField fx:id="messageToSend" layoutX="6.0" layoutY="229.0" prefHeight="25.0" prefWidth="386.0" onAction="#sendMsg" />
+                           <Button fx:id="buttonSend" contentDisplay="TOP" layoutX="401.0" layoutY="229.0" mnemonicParsing="false" onAction="#sendMsg" prefHeight="25.0" prefWidth="148.0" text="Отправить" />
+                      </children></Pane>
+                </bottom></BorderPane>
+    </VBox>
+        </children>
+
+<!--       <children>-->
+<!--           <Label>gfdhrdfth</Label>-->
+<!--       </children>-->
+
+
 </AnchorPane>
