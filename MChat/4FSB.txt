@@ -697,3 +697,25 @@ Wed Jul 01 13:57:01 MSK 2020 Pavel:
 Wed Jul 01 13:57:01 MSK 2020 Pavel: 
 Wed Jul 01 13:57:01 MSK 2020 Pavel: 
 Wed Jul 01 13:57:02 MSK 2020 Pavel: 
+Thu Jul 02 22:46:20 MSK 2020 /clientList Pavel Thu Jul 02 22:46:20 MSK 2020 Администратор: Pavel подключился к чату
+
+Thu Jul 02 22:46:20 MSK 2020 Администратор: Добро пожаловать, дорогой Pavel
+Thu Jul 02 22:48:25 MSK 2020 Pavel: vf
+Thu Jul 02 22:51:15 MSK 2020 /clientList Pavel Thu Jul 02 22:51:15 MSK 2020 Администратор: Pavel подключился к чату
+
+Thu Jul 02 22:51:15 MSK 2020 Администратор: Добро пожаловать, дорогой Pavel
+Администратор: Pavel подключился к чату
+
+Администратор: Добро пожаловать, дорогой Pavel
+Pavel: dfthrth
+Pavel: fth
+Pavel: fth
+Pavel: rth
+Pavel: rth
+Администратор: Pavel подключился к чату
+
+Администратор: Добро пожаловать, дорогой Pavel
+Pavel: 
+Администратор: Pavel подключился к чату
+
+Администратор: Добро пожаловать, дорогой Pavel

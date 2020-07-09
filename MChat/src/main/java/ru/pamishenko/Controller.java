@@ -26,7 +26,7 @@ public class Controller implements Initializable {
     public ListView usersList;
 
     final String IP = "localhost";
-    final int PORT = 8189;
+    final int PORT = 8888;
     File file = new File("./4FSB.txt");
     Socket clientSocket;
     DataInputStream in;

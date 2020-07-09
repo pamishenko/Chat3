@@ -1,18 +1,17 @@
 package ru.pamishenko;
 
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import ru.pamishenko.client.LogInDialog;
-import ru.pamishenko.server.AuthService;
-
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+
 
 
 /**
@@ -42,6 +41,7 @@ public class App extends Application {
 
     public static void main(String[] args) {
         App.launch();
+
 
     }
 

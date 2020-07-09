@@ -13,4 +13,9 @@
       <module name="MChat" target="11" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MChat" options="" />
+    </option>
+  </component>
 </project>

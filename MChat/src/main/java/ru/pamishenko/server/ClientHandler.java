@@ -45,7 +45,6 @@ public class ClientHandler {
                                     userName = checkUserName;
                                     System.out.println(checkUserName + " connected");
                                     out.writeUTF("/authOK");
-                                    System.out.println("Клиент найден и авторизован");
                                     server.subscribe(ClientHandler.this);
                                     server.broadcastMsg("Администратор: " + userName + " подключился к чату" + "\n");
                                     sendMsg("Администратор: Добро пожаловать, дорогой " + userName + "\n");
@@ -98,11 +97,11 @@ public class ClientHandler {
 
     public void sendMsg (String msg){
 
-        String time = String.format("%tc", new Date());
+      //  String time = String.format("%tc", new Date());
 
         try {
 
-            out.writeUTF(time+" "+msg);
+            out.writeUTF(msg);
         } catch (IOException e) {
             e.printStackTrace();
         }

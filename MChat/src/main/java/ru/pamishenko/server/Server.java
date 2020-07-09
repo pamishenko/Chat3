@@ -15,7 +15,7 @@ public class Server {
 
         try {
             AuthService.dbConnect();
-            serverSocket = new ServerSocket(8189);
+            serverSocket = new ServerSocket(8888);
             System.out.println("Server started, waiting for clients..");
 
             while (true) {
